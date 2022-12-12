@@ -1,0 +1,66 @@
+			Indian Institute of Technology Dharwad
+	  		   CS 213: Autumn 2019: Mid Sem Exam
+				September 25, 2019
+				Total marks : 100
+				Total time : 2 hours
+	___________________________________________________________________________________________
+	Instructions:
+	*Create a directory called "rollno--midsem" where "rollno" is your roll number.
+	*Keep all your scripts and relevant files in this directory. 
+	*Use the following command to create a tar ball :
+	    tar~-czvvf~rollno-midsem.tgz~~rollno-midsem/ 
+	(Note that you have to go outside this directory to run this command)
+	*Upload this tarball ``rollno--midsem.tgz" on moodle. 
+	*Do not change cases, and do not deviate from the naming scheme for your scripts, directory or tar file to be uploaded. 
+	*If you make multiple submissions, only the last submission on Moodle will be evaluated.
+	*You can make use of your lab submissions
+	*Marks will be allocated for error handling.
+	*Marks will be given only based on the execution of your code. You need to check your code for various scenarios. 
+	__________________________________________________________________________________________
+	 
+	Q0.  When we run following command 
+	     $tar -xvf rollno--midsem.tgz 
+	     We should get a directory "rollno--midesm" containing q1.js, q2.php and q3.php (it may have other files). 
+	[5 marks]  
+	__________________________________________________________________________________________
+	 
+	Q1. [File name: q1.js] Dictionary Implementation:
+	-Create a form, which takes a word as input, on clicking "Search", displays its "meaning". 
+	-If the "word" is not present, ask the user to enter the meaning, and store it. Display the search box again. 
+	[15 marks]
+	__________________________________________________________________________________________
+	 
+	Q2. [File name: q2.php] Selection pick up of data from multiple (at least three) files: 
+	-Take multiple text files as input as command line arguments to q2.php.
+	-Output out.txt with the following specifications:
+	 Last line has your roll number. 
+	 First line of out.txt is the first line of first text file. 
+	 Second line of out.txt is the second line of second text file. 
+	 and so on. 
+	----Check if "nth" text file has "n" lines. If not insert a blank line in out.txt. 
+	----Check for file extension .txt; if it does not have .txt extension, show an error message and exit. 
+	 
+
+	----If the file out.txt is not present already, it needs to be created. 
+	 
+	----Your code could be in multiple files, but we will run q2.php with any number of arguments. 
+	[40 marks]  
+	__________________________________________________________________________________________
+	 
+	Q3. [File name:q3.php] Upload and Merge reversed Files: 
+	--- Create a form to upload 6 text files (extension ".txt").  
+		You can not assume that they have fixed nameѕ or they are in some particular location. 
+	 
+	---Check for file size to be greater than 0KB, and less than 200KB, show an error message and redirect it to upload the file again.
+	 
+	---Check for file extension .txt; if it does not have .txt extension, show an error message and redirect it to upload the file again.
+
+	-On clicking "submit" button, the text files need to be reversed linewise and merged into a single file named, out.txt
+
+	-On clicking "Download File", the merged file, user should be able to
+	download out.txt. 
+
+	----Your code could be in multiple files, but we will run q3.php. 
+
+	[40 marks]
+	__________________________________________________________________________________________

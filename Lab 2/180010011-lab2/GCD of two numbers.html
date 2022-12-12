@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GCD of two numbers</title>
+
+<script type="text/javascript">
+
+    function find()  {
+        frm = document.getElementById("form1");
+                elem1 = frm.elements[0]
+                elem2 = frm.elements[1]
+                x = elem1.value
+                y = elem2.value
+    if (x == 0) {
+            alert("Error")  }
+    else if (y == 0) {
+            alert("Error")  }
+    else if (x == y) {
+            alert("gcd of "+ x + " and "+y+ " is "+x)  }
+    else {
+for(i=1; i <= x && i <= y; i++)
+    {
+        if(x%i==0 && y%i==0)
+            gcd = i;
+          }  
+}
+  alert("gcd of "+ x + " and "+y+ " is "+gcd)
+ }
+
+</script>
+</head>
+<body>
+<h1>GCD</h1>
+    <form Id="form1"  onsubmit="find()">
+        Number 1: <br>
+          <input type="number" name="a"> <br>
+        Number 2: <br>
+          <input type="number" name="b">
+        <br><br><br>
+
+        <input type="submit" value="Find">
+    </form>
+</body>
+</html>

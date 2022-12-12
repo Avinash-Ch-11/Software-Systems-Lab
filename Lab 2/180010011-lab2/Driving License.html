@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Driving license eligibility</title>
+
+<script type="text/javascript">
+
+    function Check()  {
+    
+        frm = document.getElementById("form1");
+                elem1 = frm.elements[0]
+                x = elem1.value;
+                if (x >= 18 && x<=100){
+                    alert("You are Eligibile")  }
+                else {
+                     alert("You are not Eligibile")
+                     }  
+    }
+</script>
+</head>
+<body>
+    <h1>Driving License Eligibility</h1>
+    <form Id="form1"  onsubmit="Check()">
+        Enter Age: <br>
+          <input type="number">
+        <br><br>
+
+        <input type="submit" value="Check">
+    </form>
+</body>
+</html>      

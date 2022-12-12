@@ -1,0 +1,66 @@
+Lab Stmt 7: MySQL and PHP
+Deadline : 17th November 2019 : 18:00 hours.
+-----------------------------------------------------------------------------------
+1.0) Create a database called 'publications'.
+This database will have two tables called 'authors' and 'titles'.
+(you can sample.txt for raw data). 
+ 
+
+Table 'authors' will have following schema:
+ 
++---------+--------------+------+-----+---------+-------+
+| Field   | Type         | Null | Key | Default | Extra |
++---------+--------------+------+-----+---------+-------+
+| author   | varchar(120) | YES  |     | NOT NULL|       |
+| publisher| varchar(30)  | YES  |     | NULL    |       |
++---------+--------------+------+-----+---------+-------+
+
+ 
+Table 'titles' will have following schema:
++-------+--------------+------+-----+---------+-------+
+| Field | Type         | Null | Key | Default | Extra |
++-------+--------------+------+-----+---------+-------+
+| title | varchar(120) | YES  |     | NOT NULL|       |
+| author| varchar(120) | YES  |     | NULL    |       |
+| year  | smallint(6)  | YES  |     | NULL    |       |
++-------+--------------+------+-----+---------+-------+
+ 
+Write a PHP program in which you communicate with this database 
+   and have following functionalities:
+
+1.1) Display all the records in both the tables.
+1.2) Adding a record (available for both the tables).
+1.3) Deleting a record (available for both the tables).
+1.4) Updating year of publication for a given title. 
+     It might be possible that user might submit a substring of title. 
+1.5) Given a book find its author and year of publication.
+     It might be possible that user might submit a substring in the book.
+1.6) Given a publisher-- find all the books (names of the books) 
+     which authors from that publisher have published, publication year.
+     ( i.e., publisher wise listing of books, authors along with publication year).
+1.7) When you are updating/adding please do the data type check
+     (for 1.2,1.3,1.4).
+-----------------------------------------------------------------------------------
+Submission guideline:
+ 
+Please create a directory called ``rollno-lab7" where ``rollno" is your
+roll number.
+Main file is main.php.
+We will execute this file in web browser.
+Keep login.php separate and include it in main.php
+ 
+If we do not find the main.php in your directory after extracting tar
+ball, there is no further evaluation.  
+This is equivalent to no submission. 
+You will lose all marks for the assignment. 
+--------------------------------------------------------------------------------
+Keep all your scripts, html pages and all relevant files in this directory 
+
+Use following command to create a tar ball :
+    tar~-czvvf~rollno.tgz~~rollno/ 
+ 
+Upload this tarball ``rollno-lab7.tgz" on moodle. 
+ 
+Do not change cases, and do not deviate from the  
+naming scheme for your scripts, directory or tar file to be uploaded. 
+--------------------------------------------------------------------------------
